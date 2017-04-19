@@ -6,7 +6,7 @@
 #
 default: &default
   host: localhost
-  adapter: postrgesql
+  adapter: postgresql
   encoding: UTF8
   username: geek
   timeout: 5000

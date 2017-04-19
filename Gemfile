@@ -7,11 +7,11 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.1'
+gem 'rails', '~> 5.0.2'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
-Use postgresql as the database for Active Record
-gem 'pg', '~>0.18'
+#Use postgresql as the database for Active Record
+gem 'pg', '~> 0.18'
 gem 'active_model_serializers'
 gem 'activerecord-reset-pk-sequence'
 
@@ -39,14 +39,14 @@ group :development, :test do
 
   gem 'guard'
   gem 'guard-bundler', require: false
-  gem 'guard-rscpec', require: false
+  gem 'guard-rspec', require: false
 
-  gem 'rscpec-rails', '~>3.5'#, :github 'rscpec/rscpec-rails'
+  gem 'rspec-rails', '~>3.5'#, :github 'rscpec/rscpec-rails'
   gem 'rails-controller-testing'
 
-  gem 'robocop', require: false
-  gem 'robocop-rspec', require: false
-  gem 'guard-robocop', require: false
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'guard-rubocop', require: false
 end
 
 group :test do
@@ -64,7 +64,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
